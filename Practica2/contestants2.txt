@@ -1,0 +1,11 @@
+10
+Contestant 1: 84
+Contestant 2: 16
+Contestant 3: 53
+Contestant 4: 26
+Contestant 5: 37
+Contestant 6: 85
+Contestant 7: 52
+Contestant 8: 64
+Contestant 9: 82
+Contestant 10: 66
