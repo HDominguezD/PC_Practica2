@@ -66,10 +66,13 @@ public class Practica2 {
     }
     
     private static void generateOutput(Competitor[] comp) throws FileNotFoundException{
-        PrintWriter pw = new PrintWriter("./output.txt");
-        pw.println(nCompetitors);
-        for (int i = 0; i < nCompetitors; i++){
-            pw.println(comp[i].getName()+ ": "+comp[i].getScore());
+        try(PrintWriter pw = new PrintWriter("./output.txt")){
+            pw.println(nCompetitors);
+            for (int i = 0; i < nCompetitors; i++){
+                pw.println(comp[i].getName()+ ": "+comp[i].getScore());
+            }
+        } catch (IOException e){
+            e.printStackTrace();
         }
     }
 }
